@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /* Simbolos q podemos Ultilizar
+            # = id
+            . = class
+            : = pseudo class
+            ::= pseudo elemento
+            > = children
+        */
+        body{
+            background-image: linear-gradient(to bottom, #CAB1F5, #B1C6F4, #F4E8AA, #F5C999);
+            background-attachment: fixed;
+        }
+        main{
+            background-color: white;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: black;
+        }
+        a::after{
+            content: '  [link]';
+            color: #B1C6F4;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        img{
+            width: 600px;
+        }
+        #principal{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io">Repósitorio do Github</a></li>
+            <li><a href="https://youtube.com/cursoemvideo/">Canal do Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+        </ul>
+        <hr>
+        <h1 id="principal">Encaminhamento pra uma belezura</h1>
+        <ul>
+            <li><a href="https://www.instagram.com/eiemilylopes/" >Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100018946476891">Facebook</a></li>
+        </ul>
+        <hr>     
+            <picture>               
+                <source media="(max-width:1000)" srcset="telefone.png" type="image/png">
+                <abbr title="A mais bela de todas"><img src="438098648_1493946527913549_3419257732603753442_n.jpg" alt=""></abbr>
+            </picture>
+       
+    </main>
+    
+</body>
+</html>
